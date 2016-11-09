@@ -18,17 +18,11 @@ text2 = "austen-sense.txt"
 f = open(text2, 'r')
 para = f.read() 
 
-tokens = nltk.word_tokenize(para)
-print("TOKENS")
-print(tokens[:151])
-tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
-print("TAGGED TOKENS")
-print(tagged_tokens[:151])
+print(para.split()[:151]) 
 
-if debug:
-	print ("First few tagged tokens are:")
-	for tup in tagged_tokens[:151]:
-		print (tup)
+tokens = nltk.word_tokenize(para)
+
+tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
 
 tagmap = {"NN":"a noun","NNS":"a plural noun","VB":"a verb","JJ":"an adjective", "PRP":"Preposition"}
 substitution_probabilities = {"NN":.15,"NNS":.10,"VB":.10,"JJ":.10,"PRP":.10} 

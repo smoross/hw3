@@ -23,8 +23,10 @@ for tweet in tweepy.Cursor(api.search, q=search_term, result_type="recent", incl
 	print (tweet.text) #prints 100 most recent tweets that have the keyword 
 
 text = TextBlob(tweet.text) #combines all the tweets into a single text
-print ('Average subjectivity is: ', text.sentiment.subjectivity) 
-print ('Average polarity is: ', text.sentiment.polarity) 
+s = text.sentiment.subjectivity
+p = text.sentiment.polarity
+print ('Average subjectivity is: ', s) 
+print ('Average polarity is: ', p) 
 
 
 
