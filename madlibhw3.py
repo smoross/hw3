@@ -12,26 +12,31 @@ from nltk.corpus import gutenberg
 debug = False
 
 if debug:
-	print ("Getting information from text2...\n")
+	print ("Getting information from austen-sense.txt...\n")
 
 text2 = "austen-sense.txt"
 f = open(text2, 'r')
-para = f.read() 
-
-print(para.split()[:151]) 
+para = f.read()
 
 tokens = nltk.word_tokenize(para)
 
 tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
 
 tagmap = {"NN":"a noun","NNS":"a plural noun","VB":"a verb","JJ":"an adjective", "PRP":"Preposition"}
-substitution_probabilities = {"NN":.15,"NNS":.10,"VB":.10,"JJ":.10,"PRP":.10} 
+substitution_probabilities = {"NN":.15,"NNS":.10,"VB":.10,"JJ":.10,"PRP":.10} #probabilities added
+#Nouns are 15% likely to be asked, and the rest are 10%
 
 def spaced(word):
 	if word in [",", ".", "?", "!", ":"]:
 		return word
 	else:
 		return " " + word
+
+sent = ''
+for word in para.split()[:150]:
+	x = spaced(word)
+	sent = sent + x
+print (sent)
 
 final_words = []
 count = 0
@@ -48,6 +53,11 @@ for (word, tag) in tagged_tokens:
 		else:
 			continue
 
+sent2 = ''
 final_text = "".join(final_words)
-print (final_text)
+for words in final_text.split()[:150]:
+	word = spaced(words)
+	sent2 = sent2 + word
+print(sent2)
+
 

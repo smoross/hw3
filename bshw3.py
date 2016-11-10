@@ -6,10 +6,18 @@ import requests
 
 base_url = 'https://www.si.umich.edu/programs/bachelor-science-information/bsi-admissions'
 r = requests.get(base_url)
-html = urllib.request.urlopen(base_url).read()
 soup = BeautifulSoup(r.text, 'html.parser')
 
 #Swap picture first 
+
+words = soup.find_all('p')
+for each in words:
+	element = each.text
+	total = re.findall('\\bstudent\\b', element)
+	print (total)
+	element = re.sub('\\bstudent\\b', 'AMAZING student', element)
+	print (element)
+
 
 txt = soup.prettify()
 
