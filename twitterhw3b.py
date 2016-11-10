@@ -1,5 +1,3 @@
-print ('Project 3''\n''Samantha Moross''\n''Section 002: Wednesday 5:30-6:30 pm')
-
 import tweepy
 from textblob import TextBlob
 from tweepy import OAuthHandler
@@ -25,7 +23,7 @@ sub_count = 0
 sub_total = 0
 
 search_term = input('Input Search ') #user inputs search term
-for tweet in tweepy.Cursor(api.search, q=search_term, result_type="recent", include_entities=True, lang="en").items(100):
+for tweet in tweepy.Cursor(api.search, q=search_term, result_type="recent", include_entities=True, lang="en").items(50):
 	print (tweet.text) #prints 100 most recent tweets that have the keyword 
 	text = TextBlob(tweet.text) #combines all the tweets into a single text
 

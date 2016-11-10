@@ -1,5 +1,4 @@
 #Twitter API: twitterhw3a.py
-
 import tweepy
 print ('Project 3''\n''Samantha Moross''\n''Section 002: Wednesday 5:30-6:30 pm')
 
@@ -22,4 +21,4 @@ txt = "#UMSI-206 #Proj3" #Add Text
 
 api.update_with_media(img,status=txt) #Adds text as image status
 
-
+print('No output necessary')
