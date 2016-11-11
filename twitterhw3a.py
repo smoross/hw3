@@ -1,7 +1,10 @@
-#Twitter API: twitterhw3a.py
-print('Samantha Moross')
+print('Samantha Moross''\n''Project 3''\n''Section 002: Wednesday 5:30-6:30 pm''\n''Twitter API A')
+
+print('-----------')
+
+#C) Twitter API: twitterhw3a.py
+
 import tweepy
-print ('Project 3''\n''Samantha Moross''\n''Section 002: Wednesday 5:30-6:30 pm')
 
 #Retrieve unique code from Twitter
 consumer_key = '66yyc4VEWqdze1c14wjIOjm93'
