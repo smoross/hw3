@@ -1,4 +1,5 @@
 #Twitter API: twitterhw3a.py
+print('Samantha Moross')
 import tweepy
 print ('Project 3''\n''Samantha Moross''\n''Section 002: Wednesday 5:30-6:30 pm')
 
