@@ -34,7 +34,7 @@ for tweet in tweepy.Cursor(api.search, q=search_term, result_type="recent", incl
 	text = TextBlob(tweet.text) #combines all the tweets into a single text
 
 	pol_count = pol_count + 1
-	pol_total = pol_total + text.polarity
+	pol_total = pol_total + text.polarity 
 
 	sub_count = sub_count + 1
 	sub_total = sub_total + text.subjectivity
@@ -43,8 +43,8 @@ avg_pol = pol_total/pol_count
 avg_sub = sub_total/sub_count
 
 print('-----------')
-print("Average subjectivity is " +str(avg_sub))
-print("Average polarity is " + str(avg_pol))
+print("Average subjectivity is " +str(avg_sub)) #Calculates average subjectivity of the tweets.
+print("Average polarity is " + str(avg_pol)) #Calculates average polarity of the tweets.
 
 
 

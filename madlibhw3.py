@@ -10,7 +10,6 @@ import random
 from nltk.corpus import gutenberg
 from nltk import word_tokenize, sent_tokenize
 
-
 debug = False
 
 if debug:
@@ -50,6 +49,7 @@ for (word, tag) in tagged_tokens:
 	else:
 		new_word = input("Please enter %s:\n" % (tagmap[tag]))
 		final_words.append(spaced(new_word))
+		
 		count += 1
 		if count == 10: #User imports 10 words
 			break
