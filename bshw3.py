@@ -1,4 +1,4 @@
-print('Samantha Moross''\n''Project 3''\n''Section 002: Wednesday 5:30-6:30 pm''\n''Beautiful_Soup')
+print('Samantha Moross''\n''Project 3''\n''Section 002: Wednesday 5:30-6:30 pm''\n''Beautiful Soup')
 
 print('-----------')
 
@@ -23,7 +23,6 @@ for img in soup.findAll('img'):
 		img['src'] = 'https://scontent.fdet1-2.fna.fbcdn.net/v/t1.0-9/15032822_10209747644439231_4201962823373152471_n.jpg?oh=d65072b0bd8c20647c15464e59e131ec&oe=58C88C7C'
 	else: 
 		img['src'] = 'media\logo.png' #Assigns every image except the one specified to the logo
-
 
 pretty = str(soup)
 

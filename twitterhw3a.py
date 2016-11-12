@@ -6,7 +6,6 @@ print('-----------')
 
 import tweepy
 
-
 #Retrieve unique code from Twitter
 consumer_key = '66yyc4VEWqdze1c14wjIOjm93'
 consumer_secret = 'XJu649Ydvwhxcv1stdu4vhOtWxGPaRE1FyvxobpK3NuwRRMIlY'

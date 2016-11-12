@@ -4,7 +4,6 @@ print('-----------')
 
 #D) Twitter API: twitterhw3b.py
 
-
 import tweepy
 from textblob import TextBlob
 from tweepy import OAuthHandler
