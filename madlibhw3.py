@@ -7,15 +7,16 @@ print('-----------')
 import nltk
 import random
 
+from nltk.corpus import gutenberg
 from nltk import word_tokenize, sent_tokenize
-from nltk.corpus import gutenberg 
+
 
 debug = False
 
 if debug:
 	print ("Getting information from text2...\n")
 
-text2 = "austen-sense.txt"
+text2 = "austen-sense.txt" #from nltk book 
 f = open(text2, 'r')
 para = f.read() #reads through the lines of text
 

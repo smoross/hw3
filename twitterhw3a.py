@@ -25,4 +25,5 @@ txt = "#UMSI-206 #Proj3" #Add Text
 
 api.update_with_media(img,status=txt) #Adds text as image status
 
+
 print('No output necessary')

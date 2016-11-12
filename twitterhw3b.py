@@ -42,6 +42,7 @@ for tweet in tweepy.Cursor(api.search, q=search_term, result_type="recent", incl
 avg_pol = pol_total/pol_count
 avg_sub = sub_total/sub_count
 
+print('-----------')
 print("Average subjectivity is " +str(avg_sub))
 print("Average polarity is " + str(avg_pol))
 
