@@ -10,7 +10,6 @@ import random
 from nltk import word_tokenize, sent_tokenize
 from nltk.corpus import gutenberg 
 
-
 debug = False
 
 if debug:

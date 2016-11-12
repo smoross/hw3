@@ -24,6 +24,7 @@ for img in soup.findAll('img'):
 	else: 
 		img['src'] = 'media\logo.png' #Assigns every image except the one specified to the logo
 
+
 pretty = str(soup)
 
 webpage = open('file.html', 'w') #Writes to the HTML file in the directory
